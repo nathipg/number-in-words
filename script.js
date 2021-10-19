@@ -33,7 +33,7 @@ function getNumberText(n) {
   }
 
   pieces.forEach((piece, i) => {
-    if(+piece === 0 && i !== 2) {
+    if(+piece === 0 && i !== 2 || +piece === 0 && i === 2 && result !== '') {
       return;
     }
 
